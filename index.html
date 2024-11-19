@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Recetas</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            padding-top: 20px;
+        }
+        nav {
+            background-color: #2c3e50;
+            padding: 10px;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+        }
+        .recipe {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        
+        }
+        .recipe img {
+            max-width: 45%;
+            border-radius: 80px;
+            max-height: 150px;
+            margin-top: 150px;
+
+        }
+        .recipe-text {
+            width: 55%;
+        }
+        .recipe-text h2 {
+            color: #e74c3c;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .no-border-table th, .no-border-table td {
+            border: none;
+        }
+        .gif {
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Recetas Deliciosas</h1>
+        <nav>
+            <ul>
+                <li><a href="#receta1">Receta 1</a></li>
+                <li><a href="#receta2">Receta 2</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+
+        <section id="receta1" class="recipe">
+            <div class="recipe-text">
+                <h2>Ensalada César</h2>
+                <p>Una receta fresca y deliciosa, perfecta para los días calurosos. A continuación, los ingredientes y el procedimiento:</p>
+                <ul>
+                    <li>Lechuga romana</li>
+                    <li>Pechuga de pollo</li>
+                    <li>Queso parmesano</li>
+                    <li>Crostones</li>
+                    <li>Aderezo César</li>
+                </ul>
+                <h3>Instrucciones</h3>
+                <ol>
+                    <li>Cocina la pechuga de pollo a la parrilla y córtala en tiras.</li>
+                    <li>Lava y corta la lechuga romana.</li>
+                    <li>Mezcla los ingredientes en un bol y añade el aderezo.</li>
+                    <li>Decora con crostones y queso parmesano.</li>
+                </ol>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR05WL051cVLuZ6KCSJPla_Q4mWfWOu7-DiAg&s" alt="Ensalada César">
+        </section>
+
+        <section id="receta2" class="recipe">
+            <img src="https://img-global.cpcdn.com/recipes/c609e9b32a56f760/640x640sq70/photo.webp" alt="Pizza Casera">
+            <div class="recipe-text">
+                <h2>Pizza Casera</h2>
+                <p>Una receta fácil para hacer una pizza deliciosa en casa.</p>
+                <ul>
+                    <li>Base para pizza</li>
+                    <li>Salsa de tomate</li>
+                    <li>Queso mozzarella</li>
+                    <li>Pepperoni</li>
+                    <li>Aceitunas negras</li>
+                </ul>
+                <h3>Instrucciones</h3>
+                <ol>
+                    <li>Precalienta el horno a 220°C.</li>
+                    <li>Extiende la masa de pizza en una bandeja.</li>
+                    <li>Agrega salsa de tomate y queso mozzarella.</li>
+                    <li>Coloca las rodajas de pepperoni y aceitunas.</li>
+                    <li>Hornea por 15 minutos o hasta que el queso esté derretido.</li>
+                </ol>
+            </div>
+        </section>
+
+        <div>
+            <h2>Más Ideas</h2>
+            <table>
+                <tr>
+                    <th>Receta</th>
+                    <th>Tipo</th>
+                    <th>Tiempo de Preparación</th>
+                </tr>
+                <tr>
+                    <td>Ensalada César</td>
+                    <td>Vegetariana</td>
+                    <td>15 min</td>
+                </tr>
+                <tr>
+                    <td>Pizza Casera</td>
+                    <td>Carne</td>
+                    <td>30 min</td>
+                </tr>
+            </table>
+
+            <h3>Tabla Sin Bordes:</h3>
+            <table class="no-border-table">
+                <tr>
+                    <td>Receta</td>
+                    <td>Tiempo de Cocción</td>
+                </tr>
+                <tr>
+                    <td>Ensalada César</td>
+                    <td>5 min</td>
+                </tr>
+                <tr>
+                    <td>Pizza Casera</td>
+                    <td>15 min</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="gif">
+            <img src="https://i.gifer.com/aMR.gif">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Recetas Deliciosas</p>
+    </footer>
+
+</body>
+</html>
